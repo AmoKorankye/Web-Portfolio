@@ -20,7 +20,7 @@ export default function Contact() {
             </Link>
             <Link href="https://drive.google.com/drive/folders/1jwZS7ayqjDHsphEogJWljo4Y44l0KJRf?usp=drive_link" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800" target="_blank" rel="noopener noreferrer">
                 <BookOpen className="w-5 h-5" />
-                <span>Links</span>
+                <span>Resume</span>
             </Link>
             </div>
         </section>
