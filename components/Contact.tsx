@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowUpRight, Mail, Github, Linkedin, BookOpen } from 'lucide-react'
+import { Mail, Github, Linkedin, BookOpen } from 'lucide-react'
 
 export default function Contact() {
     return (
@@ -20,7 +20,7 @@ export default function Contact() {
             </Link>
             <Link href="https://drive.google.com/drive/folders/1jwZS7ayqjDHsphEogJWljo4Y44l0KJRf?usp=drive_link" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800" target="_blank" rel="noopener noreferrer">
                 <BookOpen className="w-5 h-5" />
-                <span>Resume</span>
+                <span>Links</span>
             </Link>
             </div>
         </section>
