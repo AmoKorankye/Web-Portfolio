@@ -3,7 +3,7 @@ export default function About() {
     <section className="mb-12">
       <h2 className="text-xl sm:text-2xl font-semibold mb-4">About</h2>
       <p className="mb-4 text-sm sm:text-base">
-      Hi, I’m Kwaku Amo-Korankye, a final-year AI major at Academic City University College, 
+      Hi, I’m Kwaku Amo-Korankye, a final-year AI major at Academic City University, 
       and I’m passionate about using AI to make a real difference in people’s lives. Right now, 
       I’m working on an AI-based diagnostics platform that helps analyze medical imaging with 
       deep learning to make healthcare decisions faster and more accurate. I’m also building a 
