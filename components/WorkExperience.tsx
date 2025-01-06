@@ -18,7 +18,7 @@ const jobs = [
     tech: 'Python • Google Cloud API • NLP • TTS • STT • Streamlit',
   },
   {
-    period: '2021 - 2022',
+    period: 'Jun 2023 - Sep 2023',
     title: 'Software Engineering Intern - DOBIISON VR',
     description: "Directed AI Engineering and Software Development initiatives, including the creation of an innovative Video Processing software for Dobiison's DRIIP programme.",
     tech: 'Python • Javascript • 360 Imaging',
