@@ -49,7 +49,7 @@ const jobs = [
 ]
 
 export default function WorkExperience() {
-  const [openItems, setOpenItems] = useState<number[]>([0])
+  const [openItems, setOpenItems] = useState<number[]>([])
 
   const toggleItem = (index: number) => {
     setOpenItems((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]))
@@ -81,10 +81,10 @@ export default function WorkExperience() {
                         {openItems.includes(index) ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                       </span>
                     </h3>
-                    <p className="text-sm text-muted-foreground">{job.title}</p>
-                  </div>
-                  <span className="text-sm text-muted-foreground mt-1 sm:mt-0">{job.period}</span>
+                  <p className="text-sm text-muted-foreground">{job.title}</p>
                 </div>
+                <span className="hidden sm:block text-sm text-muted-foreground">{job.period}</span>
+              </div>
               </div>
             </CollapsibleTrigger>
 
