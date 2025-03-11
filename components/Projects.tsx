@@ -100,7 +100,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="mb-12">
+    <section id="projects" className="mb-12">
       <h2 className="text-xl sm:text-2xl font-semibold mb-6">Projects</h2>
       <Card className="mb-8">
         <CardHeader>

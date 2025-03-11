@@ -3,7 +3,9 @@ import About from '@/components/About'
 import Essays from '@/components/Essays'
 import WorkExperience from '@/components/WorkExperience'
 import Projects from '@/components/Projects'
-import Contact from '@/components/Contact'
+import Skills from '@/components/Skills'
+import { BottomNavbar } from "@/components/bottom-navbar"
+
 
 export default function Home() {
   return (
@@ -12,8 +14,9 @@ export default function Home() {
       <About />
       <Essays />
       <WorkExperience />
+      <Skills />
       <Projects />
-      <Contact />
+      <BottomNavbar />
     </div>
   )
 }
