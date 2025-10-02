@@ -2,6 +2,16 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 
 const essays = [
+    { 
+    date: '16 June 2025', 
+    title: "Academic City Farewell Post",
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7340483999082926080/'
+  },
+  { 
+    date: '17 May 2025', 
+    title: "Thesis Demo",
+    link: 'https://www.linkedin.com/posts/kwaku-amo-korankye-7551751b6_ghana-is-facing-a-critical-shortage-of-healthcare-activity-7329605686995120128-WY_a?utm_source=share&utm_medium=member_desktop&rcm=ACoAADI2yPEBq95zoP1c6ZFhrcjH9AwKMDrlMe0'
+  },
   { 
     date: '30 June 2024', 
     title: "Girl's in ICT v2",
@@ -11,16 +21,6 @@ const essays = [
     date: '17 May 2024', 
     title: 'GDSC ACity farewell',
     link: 'https://www.linkedin.com/posts/kwaku-amo-korankye-7551751b6_gdsc-activity-7225096875110989826-URXt?utm_source=share&utm_medium=member_ios'
-  },
-  { 
-    date: '8 Aug 2023', 
-    title: "Girl's in ICT v1",
-    link: 'https://www.linkedin.com/posts/kwaku-amo-korankye-7551751b6_girlsinict-stem-womenintech-activity-7095381608903417856-gSFF/?utm_source=share&utm_medium=member_ios'
-  },
-  { 
-    date: '18 March 2023', 
-    title: "Texh Expo '23",
-    link: 'https://www.linkedin.com/posts/kwaku-amo-korankye-7551751b6_techexpo-acityroboticsclub-techexhibition-activity-7045742147043483648-vhas/?utm_source=share&utm_medium=member_ios'
   }
 ]
 

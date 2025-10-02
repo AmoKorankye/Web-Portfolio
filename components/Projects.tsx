@@ -54,6 +54,13 @@ function GithubProjectCard({
 }
 
 const projects = [
+    {
+    name: "Instagram Marketing Tool",
+    description: "An Instagram Scraping App, that finds targeted followers of any Instagram account and automatically follows them.",
+    lastModified: "2025-05-08",
+    technologies: ["python", "apify", "nextjs"],
+    repoUrl: "https://github.com/AmoKorankye/Comprehensive-Diagnostics-Model",
+  },
   {
     name: "Agri-Predict",
     description: "Aims to modernize farming methods and improve agricultural productivity in Africa by leveraging technology and data-driven insights.",
@@ -83,13 +90,6 @@ const projects = [
     repoUrl: "https://github.com/AmoKorankye/Online-Payment-Fraud-Detection",
   },
   {
-    name: "Spam Detection",
-    description: "Naive Bayes system classifies comments to filter unwanted content on social media. Classifies comments as spam or not, and predicts spam based on input.",
-    lastModified: "2024-03-21",
-    technologies: ["python", "pandas", "ml classification"],
-    repoUrl: "https://github.com/AmoKorankye/Spam-Detection",
-  },
-  {
     name: "Speech Applications",
     description: "Speech Applications is a user-friendly toolkit for text-to-speech and speech-to-text tasks. It seamlessly integrates with Google Cloud API",
     lastModified: "2024-02-29",
@@ -102,36 +102,80 @@ export default function Projects() {
   return (
     <section id="projects" className="mb-12">
       <h2 className="text-xl sm:text-2xl font-semibold mb-6">Projects</h2>
-      <Card className="mb-8">
-        <CardHeader>
-          <CardTitle className="text-2xl">Current Project: AI-Powered Diagnostics Platform</CardTitle>
-          <CardDescription>Revolutionizing the way we approach medical diagnostics in underserved areas.</CardDescription>
-        </CardHeader>
-        <CardContent className="flex flex-col md:flex-row gap-6">
-          <div className="md:w-1/2">
-            <Image 
-              src="/diagnostics.png" 
-              width={500} 
-              height={500} 
-              alt="AI Medical Diagnostics Dashboard" 
-              className="rounded-lg object-cover w-full h-auto"
-            />
-          </div>
-          <div className="md:w-1/2">
-            <p className="text-sm sm:text-base mb-4">
-              An AI-powered platform designed to assist healthcare professionals by providing accurate and efficient 
-              diagnoses from medical imaging. Using advanced computer vision techniques, the app supports clinical decision making
-              by analyzing X-rays, CT scans, and MRI images to detect the conditions; bone fractures, brain tumors, breast 
-              cancer, and lung cancer. 
-            </p>
-            <p className="text-sm sm:text-base">
-              With an intuitive interface, it allows doctors to upload images, receive detailed analyses, and view heatmaps
-              highlighting areas of concern. By enhancing early detection, improving treatment planning, and reducing workloads,
-              the platform aims to bring AI-driven diagnostics closer to patients and healthcare providers worldwide.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
+      <Carousel className="w-full max-w-5xl relative mb-8">
+        <CarouselContent>
+          <CarouselItem>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Current Project: [redacted]</CardTitle>
+                <CardDescription>Replacing manual finance tasks with automated approvals, fraud checks, and payroll processing.</CardDescription>
+              </CardHeader>
+              <CardContent className="flex flex-col md:flex-row gap-6">
+                <div className="md:w-1/2">
+                  <Image 
+                  src="/discord-bot-logo.jpeg" 
+                  width={500} 
+                  height={400} 
+                  alt="AI Discord Finance Bot Logo" 
+                  className="rounded-lg object-cover w-full h-96"
+                  />
+                </div>
+                <div className="md:w-1/2">
+                  <p className="text-sm sm:text-base mb-4">
+                  This project is a Discord-based financial automation bot that acts as a virtual finance officer for teams. 
+                  It lets employees request payments, reimbursements, and payroll directly in Discord, with built-in OCR to 
+                  validate receipts and invoices. For security, all transactions require CEO/CTO approval via a one-time OTP 
+                  before funds are released.
+                  </p>
+                  <p className="text-sm sm:text-base">
+                  The MVP focuses on automating core financial tasks—requests, reimbursements, approvals, and payroll—while 
+                  keeping everything logged and auditable. By integrating with the company’s bank account, the bot reduces 
+                  manual effort, prevents fraud, and centralizes finance operations in a tool the team already uses every day.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </CarouselItem>
+          <CarouselItem>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Thesis: AI-Powered Diagnostics Platform</CardTitle>
+                <CardDescription>Revolutionizing the way we approach medical diagnostics in underserved areas.</CardDescription>
+              </CardHeader>
+              <CardContent className="flex flex-col md:flex-row gap-6">
+                <div className="md:w-1/2">
+                  <Image 
+                  src="/diagnostics.png" 
+                  width={500} 
+                  height={400} 
+                  alt="AI Medical Diagnostics Dashboard" 
+                  className="rounded-lg object-cover w-full h-96"
+                  />
+                </div>
+                <div className="md:w-1/2">
+                  <p className="text-sm sm:text-base mb-4">
+                    An AI-powered platform designed to assist healthcare professionals by providing accurate and efficient 
+                    diagnoses from medical imaging. Using advanced computer vision techniques, the app supports clinical decision making
+                    by analyzing X-rays, CT scans, and MRI images to detect the conditions; bone fractures, brain tumors, breast 
+                    cancer, and lung cancer. 
+                  </p>
+                  <p className="text-sm sm:text-base">
+                    With an intuitive interface, it allows doctors to upload images, receive detailed analyses, and view heatmaps
+                    highlighting areas of concern. By enhancing early detection, improving treatment planning, and reducing workloads,
+                    the platform aims to bring AI-driven diagnostics closer to patients and healthcare providers worldwide.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </CarouselItem>
+        </CarouselContent>
+        <div className="flex justify-center gap-2 mt-4 md:hidden">
+          <CarouselPrevious className="static translate-x-0 translate-y-0" />
+          <CarouselNext className="static translate-x-0 translate-y-0" />
+        </div>
+        <CarouselPrevious className="hidden md:flex absolute" />
+        <CarouselNext className="hidden md:flex absolute" />
+      </Carousel>
 
       <Carousel className="w-full max-w-5xl relative">
   <CarouselContent>
