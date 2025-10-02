@@ -101,8 +101,8 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="mb-12">
-      <h2 className="text-xl sm:text-2xl font-semibold mb-6">Projects</h2>
-      <Carousel className="w-full max-w-5xl relative mb-8">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6">Projects</h2>
+            <Carousel className="w-full max-w-5xl relative mb-8">
         <CarouselContent>
           <CarouselItem>
             <Card>
@@ -129,7 +129,7 @@ export default function Projects() {
                   </p>
                   <p className="text-sm sm:text-base">
                   The MVP focuses on automating core financial tasks—requests, reimbursements, approvals, and payroll—while 
-                  keeping everything logged and auditable. By integrating with the company’s bank account, the bot reduces 
+                  keeping everything logged and auditable. By integrating with the company's bank account, the bot reduces 
                   manual effort, prevents fraud, and centralizes finance operations in a tool the team already uses every day.
                   </p>
                 </div>
@@ -169,30 +169,30 @@ export default function Projects() {
             </Card>
           </CarouselItem>
         </CarouselContent>
-        <div className="flex justify-center gap-2 mt-4 md:hidden">
+        <div className="flex justify-center gap-2 mt-4 sm:hidden">
           <CarouselPrevious className="static translate-x-0 translate-y-0" />
           <CarouselNext className="static translate-x-0 translate-y-0" />
         </div>
-        <CarouselPrevious className="hidden md:flex absolute" />
-        <CarouselNext className="hidden md:flex absolute" />
+        <CarouselPrevious className="hidden sm:flex absolute" />
+        <CarouselNext className="hidden sm:flex absolute" />
       </Carousel>
 
       <Carousel className="w-full max-w-5xl relative">
   <CarouselContent>
     {projects.map((project, index) => (
-      <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-        <div className="p-1">
+      <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
+        <div className="px-2 py-1 flex justify-center">
           <GithubProjectCard {...project} />
         </div>
       </CarouselItem>
     ))}
   </CarouselContent>
-  <div className="flex justify-center gap-2 mt-4 md:hidden">
+  <div className="flex justify-center gap-2 mt-4 sm:hidden">
     <CarouselPrevious className="static translate-x-0 translate-y-0" />
     <CarouselNext className="static translate-x-0 translate-y-0" />
   </div>
-  <CarouselPrevious className="hidden md:flex absolute" />
-  <CarouselNext className="hidden md:flex absolute" />
+  <CarouselPrevious className="hidden sm:flex absolute" />
+  <CarouselNext className="hidden sm:flex absolute" />
 </Carousel>
     </section>
   )
