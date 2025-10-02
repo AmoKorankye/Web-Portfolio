@@ -1,11 +1,16 @@
 "use client"
 
 import Link from "next/link"
-import { Mail, Github, Linkedin, BookOpen } from "lucide-react"
+import { useState } from "react"
+import { Mail, Github, Linkedin, FileText } from "lucide-react"
+import { PdfViewerDialog } from "./pdf-viewer-dialog"
 
 export function BottomNavbar() {
+  const [isPdfDialogOpen, setIsPdfDialogOpen] = useState(false)
+
   return (
-    <div className="fixed bottom-4 left-0 right-0 z-50 flex justify-center px-2">
+    <>
+      <div className="fixed bottom-4 left-0 right-0 z-50 flex justify-center px-2">
       <nav className="flex items-center justify-between gap-3 sm:gap-6 rounded-full bg-white px-4 sm:px-6 py-3 shadow-lg">
         <Link
           href="mailto:amokorankkye@gmail.com"
@@ -37,17 +42,23 @@ export function BottomNavbar() {
           <Linkedin className="h-5 w-5 text-black"  />
         </Link>
 
-        <Link
-          href="https://drive.google.com/drive/folders/1jwZS7ayqjDHsphEogJWljo4Y44l0KJRf?usp=drive_link"
+        <button
+          onClick={() => setIsPdfDialogOpen(true)}
           className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full transition-colors hover:bg-gray-100"
-          target="_blank"
-          rel="noopener noreferrer"
           aria-label="Resume"
         >
-          <BookOpen className="h-5 w-5 text-black" />
-        </Link>
+          <FileText className="h-5 w-5 text-black" />
+        </button>
       </nav>
     </div>
-  )
-}
+
+    <PdfViewerDialog
+      isOpen={isPdfDialogOpen}
+      onClose={() => setIsPdfDialogOpen(false)}
+      pdfUrl="/Kwaku_Amo_Korankye_CV.pdf"
+      fileName="Kwaku_Amo_Korankye_CV.pdf"
+    />
+    </>
+    )
+  }
 
