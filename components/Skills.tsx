@@ -1,6 +1,7 @@
 'use client'
 
 import { Badge } from "@/components/ui/badge"
+import { GitHubContributions } from "./github-contributions"
 
 const technologies = [
     {
@@ -23,11 +24,7 @@ export default function Skills() {
             <h2 className="text-xl sm:text-2xl font-semibold mb-6">Tech Stack</h2>
             <div className="mb-6">
                 <h3 className="text-sm text-muted-foreground mb-3">GitHub Contributions</h3>
-                <img 
-                    src="https://ghchart.rshah.org/AmoKorankye" 
-                    alt="GitHub contribution chart"
-                    className="rounded-lg"
-                />
+                <GitHubContributions username="AmoKorankye" className="w-full" />
             </div>
             <div className="space-y-6">
                 {technologies.map((item, index) => (

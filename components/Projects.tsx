@@ -129,7 +129,7 @@ export default function Projects() {
                   </p>
                   <p className="text-sm sm:text-base">
                   The MVP focuses on automating core financial tasks—requests, reimbursements, approvals, and payroll—while 
-                  keeping everything logged and auditable. By integrating with the company's bank account, the bot reduces 
+                  keeping everything logged and auditable. By integrating with the company&apos;s bank account, the bot reduces 
                   manual effort, prevents fraud, and centralizes finance operations in a tool the team already uses every day.
                   </p>
                 </div>
