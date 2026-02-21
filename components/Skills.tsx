@@ -6,7 +6,7 @@ import { GitHubContributions } from "./github-contributions"
 const technologies = [
     {
         name: "Python, Data Science & AI",
-        tech: ["python", "R", "SQL", "Natural Language Processing", "Computer Vision", "Machine Learning", "Deep Learning", "django", "flask", "pytorch", "tensorflow", "keras", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "llms"]
+        tech: ["python", "R", "SQL", "Natural Language Processing", "Computer Vision", "Machine Learning", "Deep Learning", "django", "flask", "pytorch", "tensorflow", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "LLMs"]
     },
     {
         name: "Web Application Development",
@@ -14,14 +14,14 @@ const technologies = [
     },
     {
         name: "Other Development Tools",
-        tech: ["github", "vscode", "jupyter", "vercel", "hugging face", "figma", "supabase"]
+        tech: ["github", "vscode", "jupyter", "vercel", "aws lightsail", "hugging face", "figma", "supabase"]
     }
 ]
 
 export default function Skills() {
     return (
         <section className="mb-12">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-6">Tech Stack</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-6">tech stack</h2>
             <div className="mb-6">
                 <h3 className="text-sm text-muted-foreground mb-3">GitHub Contributions</h3>
                 <GitHubContributions username="AmoKorankye" className="w-full" />

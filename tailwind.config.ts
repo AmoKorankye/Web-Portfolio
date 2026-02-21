@@ -55,6 +55,43 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		spacing: {
+  			'16': '4rem',
+  			'20': '5rem',
+  			'24': '6rem',
+  			'28': '7rem',
+  			'32': '8rem',
+  			'36': '9rem',
+  			'40': '10rem',
+  			'44': '11rem',
+  			'48': '12rem',
+  			'52': '13rem',
+  		},
+  		fontSize: {
+  			'xs': '0.5625rem',    // 9px (was 12px)
+  			'sm': '0.65625rem',   // 10.5px (was 14px)
+  			'base': '0.75rem',    // 12px (was 16px)
+  			'lg': '0.84375rem',   // 13.5px (was 18px)
+  			'xl': '0.9375rem',    // 15px (was 20px)
+  			'2xl': '1.125rem',    // 18px (was 24px)
+  			'3xl': '1.40625rem',  // 22.5px (was 30px)
+  			'4xl': '1.6875rem',   // 27px (was 36px)
+  			'5xl': '2.25rem',     // 36px (was 48px)
+  		},
+  		keyframes: {
+  			'collapsible-down': {
+  				from: { height: '0', opacity: '0' },
+  				to: { height: 'var(--radix-collapsible-content-height)', opacity: '1' }
+  			},
+  			'collapsible-up': {
+  				from: { height: 'var(--radix-collapsible-content-height)', opacity: '1' },
+  				to: { height: '0', opacity: '0' }
+  			}
+  		},
+  		animation: {
+  			'collapsible-down': 'collapsible-down 0.3s ease-out',
+  			'collapsible-up': 'collapsible-up 0.3s ease-out'
   		}
   	}
   },

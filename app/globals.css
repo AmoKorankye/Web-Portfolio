@@ -72,10 +72,11 @@
   }
 
   body {
-    @apply bg-background text-foreground overflow-x-hidden text-sm sm:text-base;
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-size: 0.75rem; /* 12px - reduced by 25% from 16px */
   }
 
-  /* Mobile-first typography */
+  /* Mobile-first typography - reduced by 25% */
   h1 {
     @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold;
   }

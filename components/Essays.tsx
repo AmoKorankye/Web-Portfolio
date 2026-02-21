@@ -2,7 +2,13 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 
 const essays = [
-    { 
+
+  { 
+    date: '12 January 2026', 
+    title: "MEST Africa EIT Announcement",
+    link: 'https://www.linkedin.com/posts/kwaku-amo-korankye_life-update-i-got-into-the-mest-ai-startup-activity-7416600897419591680-U4xI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADI2yPEBq95zoP1c6ZFhrcjH9AwKMDrlMe0'
+  },
+  { 
     date: '16 June 2025', 
     title: "Academic City Farewell Post",
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7340483999082926080/'
@@ -27,7 +33,7 @@ const essays = [
 export default function Essays() {
   return (
     <section className="mb-12">
-      <h2 className="text-xl sm:text-2xl font-semibold mb-6">Essays</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold mb-6">essays</h2>
       <ul className="space-y-3">
         {essays.map((essay, index) => (
           <li key={index} className="flex flex-col sm:flex-row sm:items-baseline">
@@ -39,6 +45,17 @@ export default function Essays() {
           </li>
         ))}
       </ul>
+      <div className="mt-8 pt-6">
+        <Link 
+          href="https://www.linkedin.com/in/kwaku-amo-korankye/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-blue-600 hover:text-blue-800 inline-flex items-center text-sm sm:text-base"
+        >
+          explore additional writings and essays on linkedin
+          <ArrowUpRight className="w-4 h-4 ml-1" />
+        </Link>
+      </div>
     </section>
   )
 }
