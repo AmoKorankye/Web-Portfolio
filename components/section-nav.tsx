@@ -196,7 +196,10 @@ export function SectionNav({ className = "" }: SectionNavProps) {
         onNavigate={(sectionId) => {
           setSwipeDirection(null)
           setActiveSection(sectionId)
-          window.scrollTo({ top: 0, behavior: 'smooth' })
+          // Use requestAnimationFrame to ensure scroll happens after React re-renders
+          requestAnimationFrame(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          })
         }}
         sections={sections}
       />

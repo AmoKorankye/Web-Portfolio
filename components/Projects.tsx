@@ -9,8 +9,8 @@ import Image from 'next/image'
 
 const projects = [
   {
-    name: "stocks prediction and polymarket trade automation",
-    description: "The coolest part of engineering is building custom solutions to your own problems. One of my 2026 goals was to learn investing, so naturally, I decided to engineer my way into it.\n\nI'm currently building a stock and Polymarket trading bot that identifies and executes smart, low-risk micro-trades, complete with daily performance reports and an interactive Discord interface.",
+    name: "polymarket trade automation",
+    description: "The coolest part of engineering is building custom solutions to your own problems. One of my 2026 goals was to learn investing, so I decided to engineer my way into it and try automating trades (it's the most talked about thing on polymarket twitter).\n\nI'm currently building a Polymarket trading bot that identifies and executes smart, low-risk micro-trades, complete with daily performance reports and a native mac app so i can interact with my bots.",
     lastModified: "currently building",
     technologies: [],
     repoUrl: "",

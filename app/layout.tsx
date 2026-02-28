@@ -9,7 +9,7 @@ const siteUrl = 'https://amokorankye.com'
 
 export const metadata: Metadata = {
   title: {
-    default: ' software engineer · artficial intelligence',
+    default: ' kwaku amo-korankye',
     template: '%s | Kwaku Amo-Korankye',
   },
   description:

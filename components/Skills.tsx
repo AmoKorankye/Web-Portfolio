@@ -6,7 +6,7 @@ import { GitHubContributions } from "./github-contributions"
 const technologies = [
     {
         name: "Python, Data Science & AI",
-        tech: ["python", "R", "SQL", "Natural Language Processing", "Computer Vision", "Machine Learning", "Deep Learning", "django", "flask", "pytorch", "tensorflow", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "LLMs"]
+        tech: ["python", "R", "SQL", "Natural Language Processing", "Computer Vision", "Machine Learning", "Deep Learning", "django", "flask", "pytorch", "scikit-learn", "numpy", "matplotlib", "seaborn", "LLM integration"]
     },
     {
         name: "Web Application Development",
@@ -14,7 +14,7 @@ const technologies = [
     },
     {
         name: "Other Development Tools",
-        tech: ["github", "vscode", "jupyter", "vercel", "aws lightsail", "hugging face", "figma", "supabase"]
+        tech: ["github", "jupyter", "vercel", "aws vps hosting", "hugging face", "figma", "supabase"]
     }
 ]
 
