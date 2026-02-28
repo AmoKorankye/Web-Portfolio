@@ -27,7 +27,7 @@ const projects = [
     name: "research study - Explaining Deep Networks: Analysis of Interpretability Methods in Medical Imaging",
     description: "Exploring the necessity of xAI in Medical Imaging and how useful understanding the model's results are for the end-user. Research Manuscript and Code Implementation on SHAP and GradCAM for on a multi-class classification task for medical diagnosis on Breast Cancer, Bone Fractures, Lung Cancer and Brain Tumors.",
     lastModified: "2025-05-11",
-    technologies: ["python", "jupyter notebooks", "pytorch", "tensorflow"],
+    technologies: ["python", "jupyter notebooks", "pytorch", "rflow"],
     repoUrl: "https://github.com/AmoKorankye/Explaining-Deep-Networks-Analysis-of-Interpretability-Methods",
   },
   {

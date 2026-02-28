@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: 'Kwaku Amo-Korankye | Software Engineer & EIT @ MEST Africa',
     description:
       'Software Engineer and EIT at MEST Africa. BSc in Artificial Intelligence from Academic City University.',
-    images: ['/mest-headshot.jpg'],
+    images: ['/Kwaku Amo-Korankye - twitter.jpeg'],
     creator: '@amokorankye',
   },
   robots: {
