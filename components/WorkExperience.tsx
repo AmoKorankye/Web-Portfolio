@@ -8,7 +8,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 const jobs = [
   {
     period: "Jan 2026 - Present",
-    title: "EIT SWE",
+    title: "EIT and SWE",
     company: "MEST Africa",
     description:
       "Software engineering, product development, business strategy, and communication while collaborating in diverse teams to research market problems, design and build software products, run user validation experiments, and pitch investor‑ready startup concepts for potential seed funding and incubation.",

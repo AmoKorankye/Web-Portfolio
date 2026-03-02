@@ -4,6 +4,11 @@ import { ArrowUpRight } from 'lucide-react'
 const essays = [
 
   { 
+    date: '5 April 2026', 
+    title: "HerAI Hackathon Win, hosted by ALX and MEST",
+    link: 'https://www.linkedin.com/posts/kwaku-amo-korankye_winners-of-the-herai-hackathon-2026-by-mest-activity-7446689097546543104-qgTy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADI2yPEBq95zoP1c6ZFhrcjH9AwKMDrlMe0'
+  },  
+  { 
     date: '12 January 2026', 
     title: "MEST Africa EIT Announcement",
     link: 'https://www.linkedin.com/posts/kwaku-amo-korankye_life-update-i-got-into-the-mest-ai-startup-activity-7416600897419591680-U4xI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADI2yPEBq95zoP1c6ZFhrcjH9AwKMDrlMe0'
