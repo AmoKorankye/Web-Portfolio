@@ -51,9 +51,9 @@ export const metadata: Metadata = {
       'Kwaku Amo-Korankye is a Software Engineer and EIT at MEST Africa. First-class BSc in Artificial Intelligence from Academic City University.',
     images: [
       {
-        url: '/mest-headshot.jpg',
-        width: 800,
-        height: 800,
+        url: '/opengraph.png',
+        width: 1200,
+        height: 630,
         alt: 'Kwaku Amo-Korankye - Software Engineer and EIT @ MEST Africa',
       },
     ],
